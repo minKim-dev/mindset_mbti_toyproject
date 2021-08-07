@@ -2,6 +2,7 @@
   display: none;
 }
 
+
 .qBox {
   background-color: #383A3F;
   color: white;
@@ -10,9 +11,6 @@
   width: 40%
 }
 
-.wrapper {
-  display:table;
-}
 
 .answerList {
   display:table-cell;
