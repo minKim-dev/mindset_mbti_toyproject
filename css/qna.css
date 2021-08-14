@@ -4,11 +4,14 @@
 
 
 .qBox {
+  position: relative;
+  height: 120px;
   background-color: #383A3F;
   color: white;
   text-align: center;
   font-size: 24px;
   width: 40%
+
 }
 
 
@@ -31,8 +34,11 @@
 }
 
 .status {
+  position: relative;
+  top: 500px;
+  bottom: 0;
   height: 10px;
-  width: 80%;
+  width: 30%;
   background-color: #FFFFF2;
   border-radius: 20px;
 }
