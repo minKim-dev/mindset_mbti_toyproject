@@ -3,6 +3,14 @@
 }
 
 
+.clubName {
+  position: relative;
+  right: 60px;
+  top: 5px;
+  color: white;
+}
+
+
 .qBox {
   position: relative;
   height: 120px;
@@ -27,11 +35,11 @@
 }
 
 
-
 .answerList:hover, .answerList:focus {
   background-color: #F68657;
   color: whitesmoke;
 }
+
 
 .status {
   position: relative;
@@ -42,6 +50,7 @@
   background-color: #FFFFF2;
   border-radius: 20px;
 }
+
 
 .statusBar {
   height: 100%;
