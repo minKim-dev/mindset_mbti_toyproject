@@ -8,17 +8,18 @@
   right: 60px;
   top: 5px;
   color: white;
+  width: 61%
 }
 
 
 .qBox {
   position: relative;
-  height: 120px;
+  height: 20%;
   background-color: #383A3F;
   color: white;
   text-align: center;
   font-size: 24px;
-  width: 40%
+  width: 61%
 
 }
 
@@ -28,7 +29,7 @@
   vertical-align: middle;
   background-color: #FFFFF2;
   display: block;
-  width: 28%;
+  width: 60%;
   height: 70px;
   border: 0px;
   font-size: 20px;
@@ -46,7 +47,7 @@
   top: 500px;
   bottom: 0;
   height: 10px;
-  width: 30%;
+  width: 70%;
   background-color: #FFFFF2;
   border-radius: 20px;
 }

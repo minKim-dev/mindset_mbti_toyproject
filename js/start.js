@@ -25,6 +25,7 @@ function addAnswer(answerText, qIdx){
   answer.classList.add('py-3');
   answer.classList.add('mx-auto');
   answer.classList.add('fadeIn');
+  answer.classList.add('clear:both')
 
   a.appendChild(answer);
   answer.innerHTML = answerText;
