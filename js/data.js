@@ -1,86 +1,100 @@
+/*
+mouse,0
+cow,1
+tiger,2
+rabbit,3
+dragon,4
+snake,5
+horse,6
+sheep,7
+monkey,8
+chick,9
+dog,10
+pig,11
+*/
 const qnaList = [
   {
       q: '게임을 하려고 합니다.',
       a: [
-        { answer: '친구에게 연락해서 같이 한다.', type: ['mouse', 'horse', 'monkey', 'pig', 'tiger', 'snake'] }, //E
-        { answer: '혼자한다', type: ['sheep', 'chick', 'dog', 'cow', 'dragon'] }, //I
+        { answer: '친구에게 연락해서 같이 한다.', type: [0, 6, 8, 11, 2, 5] }, //E
+        { answer: '혼자한다', type: [7, 9, 10, 1, 4] }, //I
       ]
   },
   {
       q: '창업을 하려고 합니다.',
       a: [
-          { answer: '카페같은 대중적인 분야에서 창업한다.', type: ['sheep', 'chick', 'rabbit', 'snake'] }, //S
-        { answer: '자율주행 같은 미래에 뜰 것 같은 분야에서 창업한다', type: ['horse', 'monkey', 'dog', 'pig', 'mouse', 'tiger', 'dragon'] }, //N
+          { answer: '카페같은 대중적인 분야에서 창업한다.', type: [7, 9, 3, 5] }, //S
+        { answer: '자율주행 같은 미래에 뜰 것 같은 분야에서 창업한다', type: [6, 8, 10, 11, 0, 2, 4] }, //N
       ]
   },
   {
       q: '계단에서 굴러 입원해 있는 친구에게 병문안을 갔습니다.',
       a: [
-        { answer: '야 조심 좀 하지', type: ['horse', 'chick', 'dog', 'mouse', 'cow', 'tiger', 'rabbit'] }, //T
-        { answer: '괜찮아? 안다쳤어?.', type: ['sheep', 'monkey', 'pig', 'dragon', 'snake'] }, //F
+        { answer: '야 조심 좀 하지', type: [6, 9, 10, 0, 1, 2, 3] }, //T
+        { answer: '괜찮아? 안다쳤어?.', type: [7, 8, 11, 4, 5] }, //F
       ]
   },
   {
       q: '약속시간에 늦은 친구가 당신에게 버스가 막혔다고 변명합니다.',
       a: [
-        { answer: '야 그럼 일찍와야 될거 아니야? 내가 뭐가돼?', type: ['sheep', 'chick', 'pig', 'tiger', 'dragon'] }, //J
-        { answer: '그래 그럴 수도 있지.', type: ['horse', 'monkey', 'dog', 'mouse', 'rabbit', 'snake'] },  //P
+        { answer: '야 그럼 일찍와야 될거 아니야? 내가 뭐가돼?', type: [7, 9, 11, 2, 4] }, //J
+        { answer: '그래 그럴 수도 있지.', type: [6, 8, 10, 0, 3, 5] },  //P
       ]
   },
   {
       q: '친구들을 사귀고 싶습니다.',
       a: [
-        { answer: '여러 명의 친구를 두루두루 사귄다.', type: ['mouse', 'horse', 'monkey', 'pig', 'tiger', 'snake'] }, //E
-        { answer: '적은 친구들과 깊게 사귄다.', type: ['sheep', 'chick', 'dog', 'cow', 'dragon'] }, //I
+        { answer: '여러 명의 친구를 두루두루 사귄다.', type: [0, 6, 8, 11, 2, 5] }, //E
+        { answer: '적은 친구들과 깊게 사귄다.', type: [7, 9, 10, 1, 4] }, //I
       ]
   },
   {
       q: '독서실에 가려는 당신을 친구들이 부릅니다.',
       a: [
-        { answer: '친구들을 따라간다.', type: ['sheep', 'chick', 'pig', 'tiger', 'dragon'] }, //J
-        { answer: '독서실에 간다', type: ['horse', 'monkey', 'dog', 'mouse', 'rabbit', 'snake'] }, //P
+        { answer: '친구들을 따라간다.', type: [7, 9, 11, 2, 4] }, //J
+        { answer: '독서실에 간다', type: [6, 8, 10, 0, 3, 5] }, //P
       ]
   },
   {
       q: '수련회에 갔습니다.',
       a: [
-        { answer: '방의 가운데에 있는다.', type: ['mouse', 'horse', 'monkey', 'pig', 'tiger', 'snake'] }, //E
-        { answer: '방의 구석자리에 있는다.', type: ['sheep', 'chick', 'dog', 'cow', 'dragon'] }, //I
+        { answer: '방의 가운데에 있는다.', type: [0, 6, 8, 11, 2, 5] }, //E
+        { answer: '방의 구석자리에 있는다.', type: [7, 9, 10, 1, 4] }, //I
       ]
     },
     {
       q: '시험이 2주 남았습니다',
       a: [
-        { answer: '계획표를 세우고 공부한다.', type: ['sheep', 'chick', 'pig', 'tiger', 'dragon'] }, //J
-        { answer: '손에 잡히는 대로 공부한다.', type: ['horse', 'monkey', 'dog', 'mouse', 'rabbit', 'snake'] },  //P
+        { answer: '계획표를 세우고 공부한다.', type: [7, 9, 11, 2, 4] }, //J
+        { answer: '손에 잡히는 대로 공부한다.', type: [6, 8, 10, 0, 3, 5] },  //P
       ]
     },
     {
       q: '낯선 사람들과 있는 자리에서',
       a: [
-        { answer: '먼저 말을 걸면서 분위기를 띄운다.', type: ['mouse', 'horse', 'monkey', 'pig', 'tiger', 'snake']}, //E
-        { answer: '말을 걸어올 때까지 기다리고 본다.', type: ['sheep', 'chick', 'dog', 'cow', 'dragon']}, //I
+        { answer: '먼저 말을 걸면서 분위기를 띄운다.', type: [0, 6, 8, 11, 2, 5]}, //E
+        { answer: '말을 걸어올 때까지 기다리고 본다.', type: [7, 9, 10, 1, 4]}, //I
       ]
   },
   {
       q: '맛있어 보이는 식당을 발견한 나는',
       a: [
-        { answer: '간판에서 맛집의 기운이 느껴진다 맛집 각이야.', type: ['horse', 'monkey', 'dog', 'pig', 'mouse', 'tiger', 'dragon']}, //N
-        { answer: '유명하고 리뷰도 많으니까 맛은 보장되어 있겠군.', type: ['sheep', 'chick', 'rabbit', 'snake']}, //S
+        { answer: '간판에서 맛집의 기운이 느껴진다 맛집 각이야.', type: [6, 8, 10, 11, 0, 2, 4]}, //N
+        { answer: '유명하고 리뷰도 많으니까 맛은 보장되어 있겠군.', type: [7, 9, 3, 5]}, //S
       ]
   },
   {
       q: '해외여행 계획을 짜게 된 나는',
       a: [
-        { answer: '할 거면 제대로! 일별로 세부 일정을 정리한다.', type: ['sheep', 'chick', 'pig', 'tiger', 'dragon']}, //J
-        { answer: '비행기 표만 끊어두고 계획의 80% 끝난다고 생각한다.', type: ['horse', 'monkey', 'dog', 'mouse', 'rabbit', 'snake']}, //P
+        { answer: '할 거면 제대로! 일별로 세부 일정을 정리한다.', type: [7, 9, 11, 2, 4]}, //J
+        { answer: '비행기 표만 끊어두고 계획의 80% 끝난다고 생각한다.', type: [6, 8, 10, 0, 3, 5]}, //P
       ]
   },
   {
       q: '친구와 다투었을 때 나는',
       a: [
-        { answer: '나 진짜 너무 화났어 라고 말한다.', type: ['horse', 'chick', 'dog', 'mouse', 'cow', 'tiger', 'rabbit']}, //T
-        { answer: '어떤 점은 꼭 고쳐줬으면 좋겠어 라고 말한다.', type: ['sheep', 'monkey', 'pig', 'dragon', 'snake']}, //F
+        { answer: '나 진짜 너무 화났어 라고 말한다.', type: [6, 9, 10, 0, 1, 2, 3]}, //T
+        { answer: '어떤 점은 꼭 고쳐줬으면 좋겠어 라고 말한다.', type: [7, 8, 11, 4, 5]}, //F
       ]
   },
 ]
