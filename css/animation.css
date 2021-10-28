@@ -18,12 +18,25 @@
   to { opacity: 0; }
 }
 
-.fadeIn{
-  animation: fadeIn;
-  animation-duration: 0.5s;
+@keyframes fadeIn{
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
-.fadeOut{
-  animation: fadeOut;
-  animation-duration: 0.5s;
+
+@-webkit-keyframes fadeIn{
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
